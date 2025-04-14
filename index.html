@@ -77,3 +77,51 @@ Website अब एक्टिव है,
   </script>
 </body>
 </html>
+
+<!-- Four Box Section Below Footer -->
+<section class="footer-boxes">
+  <div class="box-container">
+    <div class="box">Box 1 Content</div>
+    <div class="box">Box 2 Content</div>
+    <div class="box">Box 3 Content</div>
+    <div class="box">Box 4 Content</div>
+  </div>
+</section>
+
+<!-- Paste this CSS into style.css -->
+<style>
+.footer-boxes {
+  padding: 2rem 1rem;
+  background: #050d1a; /* Dark gradient feel */
+  display: flex;
+  justify-content: center;
+}
+
+.box-container {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.box {
+  width: 160px;
+  height: 120px;
+  background: linear-gradient(145deg, #111111, #1a1a1a);
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+  color: #00ffff;
+  font-weight: bold;
+  font-family: 'Courier New', monospace;
+  text-align: center;
+  line-height: 120px;
+  transition: 0.3s ease;
+}
+
+.box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #00ffff;
+  color: #fff;
+  background-color: #121212;
+}
+</style>
