@@ -153,3 +153,75 @@ h2 { text-align: center; margin-top: 2rem; font-size: 1.8rem; }
   margin-top: 0.5rem;
   text-align: center;
 }
+
+/* MP3 Section Styling – AI Bhai × Deepak Chauhan */
+
+.mp3-section {
+  background: linear-gradient(135deg, #000000, #001f3f);
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.mp3-title h2 {
+  font-size: 2rem;
+  color: #ffaa00;
+}
+
+.mp3-title p {
+  font-style: italic;
+  color: #ccc;
+  margin-bottom: 2rem;
+}
+
+.mp3-image-box {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.mp3-image-box img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 3px solid #00eaff;
+  object-fit: cover;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+}
+
+.audio-box {
+  background: #222;
+  padding: 1.5rem;
+  border-radius: 20px;
+  margin: 2rem auto;
+  max-width: 500px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.4);
+}
+
+.transcript {
+  margin-top: 2rem;
+  font-size: 1rem;
+  color: #ccc;
+  font-family: 'Courier New', monospace;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-left: 4px solid #ffaa00;
+  text-align: left;
+  max-width: 700px;
+  margin-inline: auto;
+}
+
+/* Footer Logo */
+.mp3-footer-logo {
+  margin-top: 3rem;
+}
+
+.mp3-footer-logo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  border: 2px solid #ffaa00;
+  object-fit: cover;
+}
