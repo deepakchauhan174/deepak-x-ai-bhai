@@ -106,3 +106,50 @@ h2 { text-align: center; margin-top: 2rem; font-size: 1.8rem; }
   50% { transform: translateY(-5px); }
   100% { transform: translateY(0px); }
 }
+
+/* Motivational Fire Section Styles */
+.motivational-fire {
+  background: linear-gradient(135deg, #111, #1a1a1a);
+  padding: 2rem;
+  border-radius: 20px;
+  margin: 2rem 0;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.fire-content {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.fire-quote p {
+  font-size: 1.3rem;
+  color: #ffaa00;
+  font-weight: bold;
+}
+
+.by {
+  font-size: 1rem;
+  color: #00eaff;
+  margin-top: 0.5rem;
+}
+
+.fire-image img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 1rem;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 234, 255, 0.5);
+}
+
+.today-fire h3 {
+  color: #ff0055;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.today-fire p {
+  font-size: 1.1rem;
+  color: #eee;
+  margin-top: 0.5rem;
+  text-align: center;
+}
