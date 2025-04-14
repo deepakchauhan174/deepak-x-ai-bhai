@@ -318,30 +318,19 @@ text-shadow: 0 0 10px #00ffff;
   justify-content: center;
 }
 
-.box {
-  width: 200px;
-  height: 140px;
-  color: #fff;
-  font-weight: bold;
-  font-family: 'Courier New', monospace;
-  text-align: center;
-  line-height: 140px;
-  border-radius: 20px;
-  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
-  transition: 0.4s ease;
-  background: linear-gradient(135deg, #0d0d0d, #1a1a1a); /* default background */
-}
-
 .group-box {
-  width: 160px;
-  height: 160px;
+  width: 220px;
+  height: auto;
+  padding: 1rem;
   background: linear-gradient(145deg, #ff4d4d, #ff9966);
   border-radius: 20px;
   box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
   color: #ffffff;
-  padding: 1rem;
   font-family: 'Courier New', monospace;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   transition: all 0.3s ease;
 }
 
@@ -355,29 +344,34 @@ text-shadow: 0 0 10px #00ffff;
   font-size: 1rem;
   font-weight: bold;
   color: #fff;
+  margin-bottom: 0.3rem;
   text-shadow: 0 0 4px #00ffff;
 }
 
 .group-subtext {
-  font-size: 0.8rem;
-  margin: 0.5rem 0;
+  font-size: 0.75rem;
+  margin: 0.3rem 0;
   color: #aeeeff;
+  line-height: 1.2rem;
+}
 
 .group-note {
   font-size: 0.7rem;
-  margin-top: 0.5rem;
+  margin-top: 0.4rem;
   color: #ccc;
+  line-height: 1rem;
 }
 
 .join-button {
-  margin-top: 0.3rem;
-  padding: 5px 10px;
+  margin-top: 0.4rem;
+  padding: 6px 12px;
   background-color: #00ffff;
   border: none;
   border-radius: 6px;
   font-size: 0.75rem;
   cursor: pointer;
   font-weight: bold;
+  color: #000;
 }
 
 .join-button:hover {
