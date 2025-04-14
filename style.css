@@ -237,22 +237,16 @@ h2 { text-align: center; margin-top: 2rem; font-size: 1.8rem; }
   z-index: 9999;
   flex-direction: column;
 }
-.fusion-img {
-  width: 200px;
-  margin: 20px;
-  border-radius: 20px;
-  box-shadow: 0 0 40px #0ff;
-}
 .overlay p {
   color: #0ff;
-  font-size: 18px;
+  font-size: 24px;
   text-align: center;
   font-family: 'Courier New', monospace;
   white-space: pre-wrap;
   max-width: 90%;
 }
 .fusion-img {
-  width: 200px;
+  width: 400px;
   margin: 20px;
   border-radius: 20px;
   box-shadow: 0 0 40px #0ff;
