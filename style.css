@@ -290,3 +290,13 @@ h2 { text-align: center; margin-top: 2rem; font-size: 1.8rem; }
   box-shadow: 0 0 10px #0ff, 0 0 20px #1d1dff;
   text-shadow: 0 0 5px #0ff;
 }
+
+.tagline {
+  color: #000; /* या कोई dark shade like #111 या deep blue */
+  font-weight: bold;
+  font-size: 1rem;
+  text-shadow: 0 0 4px rgba(255,255,255,0.6); /* थोड़ी outline */
+}
+
+color: #00ffff; 
+text-shadow: 0 0 10px #00ffff;
