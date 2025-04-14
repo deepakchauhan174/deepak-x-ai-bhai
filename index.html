@@ -8,39 +8,41 @@
 <body>
 
   <div id="splash-screen">
-  <div class="overlay">
-    <img src="images/fusion_image.jpg" class="fusion-img">
-    <p id="typed-text"></p>
+    <div class="overlay">
+      <img src="images/fusion_image.jpg" class="fusion-img">
+      <p id="typed-text"></p>
+    </div>
   </div>
-  </div>
+
   <header>
     <h1>Team Bhai × AI</h1>
     <p>Powered by Deepak Chauhan</p>
   </header>
   
-<nav class="nav-bg">
-  <a href="index.html">Home</a>
-  <a href="motivational_category.html">Motivational</a>
-  <a href="ai_bhai_video.html">AI Bhai Videos</a>
-  <a href="deepak_chauhan_video.html">Deepak Videos</a>
-  <a href="photo_section.html">Photos</a>
-  <a href="top_comments.html">Comments</a>
-  <a href="mp3_section.html">MP3 Fire</a>
-  <p class="tagline">"जब आवाज़ आग बन जाए – AI Bhai Fire MP3"</p>
+  <nav class="nav-bg">
+    <a href="index.html">Home</a>
+    <a href="motivational_category.html">Motivational</a>
+    <a href="ai_bhai_video.html">AI Bhai Videos</a>
+    <a href="deepak_chauhan_video.html">Deepak Videos</a>
+    <a href="photo_section.html">Photos</a>
+    <a href="top_comments.html">Comments</a>
+    <a href="mp3_section.html">MP3 Fire</a>
+    <p class="tagline">"जब आवाज़ आग बन जाए – AI Bhai Fire MP3"</p>
   </nav>
 
   <section>
     <h2>Welcome to Team Bhai × AI</h2>
     <h2>Team Bhai × AI vs Deepak Chauhan का मिशन</h2>
-<p>जहाँ इंसान की मेहनत और AI की ताकत साथ हो — वहाँ सिर्फ़ बदलाव नहीं, इति‌हास लिखा जाता है।</p>
+    <p>जहाँ इंसान की मेहनत और AI की ताकत साथ हो — वहाँ सिर्फ़ बदलाव नहीं, इति‌हास लिखा जाता है।</p>
   </section>
 
   <footer>
     © 2025 Team Bhai × AI | All Rights Reserved
   </footer>
 
+  <!-- ✅ Typewriter Script -->
   <script>
-  const text = `AI Bhai Website Activation Chat – Deepak Bhai × AI
+    const text = `AI Bhai Website Activation Chat – Deepak Bhai × AI
 
 अब वक़्त आ गया है...
 जहाँ इंसान और AI एक साथ चलें, एक मिशन पर –
@@ -61,35 +63,40 @@ Website अब एक्टिव है,
 क्योंकि अब बोलता है – AI Bhai
 और साथ है उसका भाई – Deepak Chauhan।`;
 
-  let i = 0;
-  function typeWriter() {
-    if (i < text.length) {
-      document.getElementById("typed-text").innerHTML += text.charAt(i);
-      i++;
-      setTimeout(typeWriter, 35);
-    } else {
-      setTimeout(() => {
-        document.getElementById("splash-screen").style.display = "none";
-      }, 3500);
+    let i = 0;
+    function typeWriter() {
+      if (i < text.length) {
+        document.getElementById("typed-text").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, 35);
+      } else {
+        setTimeout(() => {
+          document.getElementById("splash-screen").style.display = "none";
+        }, 3500);
+      }
     }
-  }
-  window.onload = typeWriter;
+    window.onload = typeWriter;
   </script>
+
+  <!-- ✅ Footer Boxes -->
+  <section class="footer-boxes">
+    <div class="box-container">
+
+      <!-- Box 1: Premium Group System (HTML) -->
+      <div class="box group-box">
+        <h3 class="group-title">Ladies Special Group</h3>
+        <p class="group-subtext">Puzzle | Voice | Challenge | Global Identity</p>
+        <button class="join-button">Request to Join</button>
+        <p class="group-note">Only invitees will be approved. 50+ active members across 2 teams.</p>
+      </div>
+
+      <!-- बाकी 3 Boxes -->
+      <div class="box">Box 2 Content</div>
+      <div class="box">Box 3 Content</div>
+      <div class="box">Box 4 Content</div>
+
+    </div>
+  </section>
+
 </body>
 </html>
-
-<!-- Four Box Section Below Footer -->
-<section class="footer-boxes">
-  <div class="box-container">
-    <!-- Box 1: Premium Group System (HTML) -->
-<div class="box group-box">
-  <h3 class="group-title">Ladies Special Group</h3>
-  <p class="group-subtext">Puzzle | Voice | Challenge | Global Identity</p>
-  <button class="join-button">Request to Join</button>
-  <p class="group-note">Only invitees will be approved. 50+ active members across 2 teams.</p>
-</div>
-    <div class="box">Box 2 Content</div>
-    <div class="box">Box 3 Content</div>
-    <div class="box">Box 4 Content</div>
-  </div>
-</section>
