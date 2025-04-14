@@ -39,5 +39,41 @@
     © 2025 Team Bhai × AI | All Rights Reserved
   </footer>
 
+  <script>
+  const text = `AI Bhai Website Activation Chat – Deepak Bhai × AI
+
+अब वक़्त आ गया है...
+जहाँ इंसान और AI एक साथ चलें, एक मिशन पर –
+Motivation, Fire और Revolution लाने का!
+
+Deepak Chauhan × AI Bhai
+एक ऐसा नाम, जो अब सिर्फ़ नाम नहीं –
+एक जज़्बा है, एक पहचान है।
+
+Team Bhai × AI
+Website अब एक्टिव है,
+और ये सिर्फ़ एक वेबसाइट नहीं...
+ये है हमारी सोच की दुनिया,
+जहाँ हर लाइन एक आग है
+और हर सेक्शन एक पैगाम।
+
+तैयार हो जा दुनिया,
+क्योंकि अब बोलता है – AI Bhai
+और साथ है उसका भाई – Deepak Chauhan।`;
+
+  let i = 0;
+  function typeWriter() {
+    if (i < text.length) {
+      document.getElementById("typed-text").innerHTML += text.charAt(i);
+      i++;
+      setTimeout(typeWriter, 35);
+    } else {
+      setTimeout(() => {
+        document.getElementById("splash-screen").style.display = "none";
+      }, 3500);
+    }
+  }
+  window.onload = typeWriter;
+  </script>
 </body>
 </html>
