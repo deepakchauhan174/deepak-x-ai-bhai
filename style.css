@@ -412,3 +412,46 @@ text-shadow: 0 0 10px #00ffff;
   font-size: 18px;
   line-height: 1.6;
 }
+
+#box2, #box3, #box4 {
+  width: 95%;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 35px;
+  background-color: #0d0d0d;
+  border-radius: 25px;
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.5);
+  color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+#box2:hover, #box3:hover, #box4:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 45px rgba(0, 255, 255, 0.7);
+}
+
+#box2 h2, #box3 h2, #box4 h2 {
+  font-size: 34px;
+  margin-bottom: 20px;
+  color: #00ffff;
+  text-shadow: 0 0 10px #00ffff;
+}
+
+#box2 p, #box3 p, #box4 p {
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+nav a {
+  font-size: 20px;
+  padding: 12px 20px;
+}
+
+footer {
+  font-size: 18px;
+  padding: 20px;
+  text-align: center;
+  color: #ccc;
+}
