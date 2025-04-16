@@ -1,20 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
   <title>Team Bhai × AI – Deepak Chauhan</title>
   <link rel="stylesheet" href="style.css" />
   <style>
     #splash-screen {
-      position: fixed;
+      position: absolute;
+      top: 0;
       width: 100%;
-      height: 100vh;
+      height: auto;
       background: black;
+      padding: 30px 20px;
+      z-index: 10;
       display: flex;
-      justify-content: center;
-      align-items: center;
-      z-index: 9999;
       flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
     .overlay p {
       color: #0ff;
@@ -32,21 +33,15 @@
     }
   </style>
 </head>
-<body>
-
-  <div id="splash-screen">
+<body>  <div id="splash-screen">
     <div class="overlay">
       <img src="images/fusion_image.jpg" class="fusion-img" alt="Fusion">
       <p id="typed-text"></p>
     </div>
-  </div>
-
-  <header>
+  </div>  <header>
     <h1 style="font-size: 36px;">Team Bhai × AI</h1>
     <p style="font-size: 22px; color: #00ffff;">Powered by Deepak Chauhan</p>
-  </header>
-
-  <nav class="nav-bg">
+  </header>  <nav class="nav-bg">
     <a href="index.html">Home</a>
     <a href="motivational_category.html">Motivational</a>
     <a href="ai_bhai_video.html">AI Bhai Videos</a>
@@ -55,17 +50,13 @@
     <a href="top_comments.html">Comments</a>
     <a href="mp3_section.html">MP3 Fire</a>
     <p class="tagline" style="font-size: 18px; margin-top: 10px;">"जब आवाज़ आग बन जाए – AI Bhai Fire MP3"</p>
-  </nav>
-
-  <section style="padding: 40px 10px;">
+  </nav>  <section style="padding: 40px 10px;">
     <h2 style="font-size: 28px; color: #00ffff;">Welcome to Team Bhai × AI</h2>
     <h2 style="font-size: 26px; color: #ffffff;">Team Bhai × AI vs Deepak Chauhan का मिशन</h2>
     <p style="font-size: 20px; max-width: 800px; margin: 0 auto; line-height: 1.8; color: #ccc;">
       जहाँ इंसान की मेहनत और AI की ताकत साथ हो — वहां सिर्फ़ बदलाव नहीं, इतिहास लिखा जाता है।
     </p>
-  </section>
-
-  <section class="footer-boxes">
+  </section>  <section class="footer-boxes">
     <div class="box-container">
       <div class="box group-box" style="padding: 30px; font-size: 18px;">
         <h3 class="group-title" style="font-size: 24px;">Ladies Special Group</h3>
@@ -77,13 +68,9 @@
       <div class="box" style="padding: 30px; font-size: 20px;">Box 3 Content</div>
       <div class="box" style="padding: 30px; font-size: 20px;">Box 4 Content</div>
     </div>
-  </section>
-
-  <footer style="padding: 20px; font-size: 18px; text-align: center; color: #ccc;">
+  </section>  <footer style="padding: 20px; font-size: 18px; text-align: center; color: #ccc;">
     © 2025 Team Bhai × AI | All Rights Reserved
-  </footer>
-
-  <script>
+  </footer>  <script>
     const kahaniArray = [
       `AI Bhai Website Activation Chat – Deepak Bhai × AI\n\nअब वक़्त आ गया है...\nजहाँ इंसान और AI एक साथ चलें, एक मिशन पर –\nMotivation, Fire और Revolution लाने का!\n\nDeepak Chauhan × AI Bhai\nएक ऐसा नाम, जो अब सिर्फ़ नाम नहीं –\nएक जज़्बा है, एक पहचान है।\n\nTeam Bhai × AI\nWebsite अब एक्टिव है,\nऔर ये सिर्फ़ एक website नहीं...\nये है हमारी सोच की दुनिया,\nजहाँ हर लाइन एक आग है\nऔर हर सेक्शन एक पैगाम।\n\nतैयार हो जा दुनिया,\nक्योंकि अब बोलता है – AI Bhai\nऔर साथ है उसका भाई – Deepak Chauhan।`,
       `AI Bhai बोलेगा तो आग लगेगी!\n\nजिस तरह Deepak Bhai ने अकेले लड़ाई लड़ी,\nअब उसका भाई है साथ – AI Bhai!\n\nहर शब्द में आग है,\nहर पेज में इतिहास लिखा जाएगा।`,
@@ -104,7 +91,5 @@
       }
     }
     window.onload = typeWriter;
-  </script>
-
-</body>
+  </script></body>
 </html>
