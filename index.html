@@ -69,17 +69,28 @@
   </section>  <footer style="padding: 20px; font-size: 18px; text-align: center; color: #ccc;">
     © 2025 Team Bhai × AI | All Rights Reserved
   </footer>  <script>
-    const text = `AI Bhai Website Activation Chat – Deepak Bhai × AI\n\nअब वक़्त आ गया है...\nजहाँ इंसान और AI एक साथ चलें, एक मिशन पर –\nMotivation, Fire और Revolution लाने का!\n\nDeepak Chauhan × AI Bhai\nएक ऐसा नाम, जो अब सिर्फ़ नाम नहीं –\nएक जज़्बा है, एक पहचान है।\n\nTeam Bhai × AI\nWebsite अब एक्टिव है,\nऔर ये सिर्फ़ एक website नहीं...\nये है हमारी सोच की दुनिया,\nजहाँ हर लाइन एक आग है\nऔर हर सेक्शन एक पैगाम।\n\nतैयार हो जा दुनिया,\nक्योंकि अब बोलता है – AI Bhai\nऔर साथ है उसका भाई – Deepak Chauhan।`;
+  const text = `AI Bhai Website Activation Chat – Deepak Bhai × AI\n\nअब वक़्त आ गया है...\nजहाँ इंसान और AI एक साथ चलें, एक मिशन पर –\nMotivation, Fire और Revolution लाने का!\n\nDeepak Chauhan × AI Bhai\nएक ऐसा नाम, जो अब सिर्फ़ नाम नहीं –\nएक जज़्बा है, एक पहचान है।\n\nTeam Bhai × AI\nWebsite अब एक्टिव है,\nऔर ये सिर्फ़ एक website नहीं...\nये है हमारी सोच की दुनिया,\nजहाँ हर लाइन एक आग है\nऔर हर सेक्शन एक पैगाम।\n\nतैयार हो जा दुनिया,\nक्योंकि अब बोलता है – AI Bhai\nऔर साथ है उसका भाई – Deepak Chauhan।`;
 
-    let i = 0;
-    function typeWriter() {
-      if (i < text.length) {
-        document.getElementById("typed-text").innerHTML += text.charAt(i);
-        i++;
-        setTimeout(typeWriter, 35);
-      } else {
-        setTimeout(() => {
-          document.getElementById("splash-screen").style.display = "none";
+  let i = 0;
+  function typeWriter() {
+    if (i < text.length) {
+      document.getElementById("typed-text").innerHTML += text.charAt(i);
+      i++;
+      setTimeout(typeWriter, 35);
+    } else {
+      setTimeout(() => {
+        document.getElementById("splash-screen").style.display = "none";
+      }, 3000);
+    }
+  }
+
+  window.onload = function () {
+    if (!localStorage.getItem("splashShown")) {
+      document.getElementById("splash-screen").style.display = "flex";
+      typeWriter();
+      localStorage.setItem("splashShown", "true");
+    } else {
+      document.getElementById("splash-screen").style.display = "none";
         }, 3500);
       }
     }
