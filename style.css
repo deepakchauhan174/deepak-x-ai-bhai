@@ -208,3 +208,13 @@ h2 {
   line-height: 1.6;
   color: #ccc;
 }
+
+a.join-button {
+  color: #00ffff; /* cyan glow color */
+  text-decoration: none;
+  font-weight: bold;
+}
+a.join-button:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
