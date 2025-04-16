@@ -132,3 +132,20 @@ h2 {
   transform: scale(1.05);
   box-shadow: 0 0 40px rgba(0, 255, 255, 0.5);
 }
+
+/* ====== CATEGORY BOX STYLE - Team Bhai × AI ====== */
+.category-box {
+  background: linear-gradient(145deg, #0d1b2a, #1b263b);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2), inset 0 0 10px rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 2rem;
+  color: #ffffff;
+  transition: all 0.4s ease;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.category-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 30px #00ffff, inset 0 0 10px rgba(255, 255, 255, 0.1);
+  background: linear-gradient(145deg, #14213d, #1f4068);
+}
