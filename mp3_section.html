@@ -1,16 +1,21 @@
-<!DOCTYPE html><html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MP3 Fire – AI Bhai × Deepak</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    .mp3-section {
-      background: linear-gradient(135deg, #000000, #001f3f);
-      color: white;
-      padding: 3rem 1rem;
-      text-align: center;
-    }.mp3-title h2 {
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #000;
+    }.mp3-section {
+  background: linear-gradient(135deg, #000000, #001f3f);
+  color: white;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.mp3-title h2 {
   font-size: 2.5rem;
   color: #ffaa00;
   margin-bottom: 0.5rem;
@@ -32,8 +37,8 @@
 }
 
 .mp3-image-box img {
-  width: 150px;
-  height: 150px;
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
   border: 3px solid #00eaff;
   object-fit: cover;
@@ -42,7 +47,7 @@
 }
 
 .mp3-image-box img:hover {
-  transform: scale(1.1);
+  transform: scale(1.08);
   box-shadow: 0 0 30px #00ffff;
 }
 
@@ -68,6 +73,8 @@ audio {
   line-height: 1.8rem;
   white-space: pre-wrap;
   animation: fadeIn 2s ease-in;
+  max-width: 90%;
+  margin-inline: auto;
 }
 
 @keyframes fadeIn {
@@ -80,12 +87,20 @@ audio {
 }
 
 .mp3-footer-logo img {
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   border: 2px solid #ffaa00;
   object-fit: cover;
   box-shadow: 0 0 15px #ffaa00;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #888;
+  background: #000;
 }
 
   </style>
