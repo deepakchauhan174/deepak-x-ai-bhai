@@ -153,3 +153,58 @@ h2 {
   box-shadow: 0 0 30px #00ffff, inset 0 0 10px rgba(255, 255, 255, 0.1);
   background: linear-gradient(145deg, #14213d, #1f4068);
 }
+
+#splash-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: black;
+  color: #0ff;
+  z-index: 9999;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid #0ff;
+  box-shadow: 0 0 20px #0ff;
+}
+
+#typed-text {
+  font-family: 'Courier New', monospace;
+  font-size: 1.1rem;
+  white-space: pre-wrap;
+  max-width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+#box2 {
+  width: 95%;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 35px;
+  background: linear-gradient(135deg, #000000, #1a1a1a);
+  border-radius: 25px;
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.5);
+  color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
+
+#box2 h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #00ffff;
+  text-shadow: 0 0 10px #00ffff;
+}
+
+#box2 p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #ccc;
+}
