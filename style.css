@@ -199,8 +199,8 @@ h2 {
 #box2 h2 {
   font-size: 30px;
   margin-bottom: 20px;
-  color: #00ffff;
-  text-shadow: 0 0 10px #00ffff;
+  color: #ffffff;
+  text-shadow: none;
 }
 
 #box2 p {
