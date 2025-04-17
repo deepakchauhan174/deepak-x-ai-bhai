@@ -227,3 +227,29 @@ a.join-button:hover {
   text-decoration: none;
   box-shadow: 0 0 20px #00ffff;
 }
+
+/* ===== Box 5 to 8 Styling – Team Bhai × AI ===== */
+.box-five, .box-six, .box-seven, .box-eight {
+  background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
+  color: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.3);
+  font-size: 1.2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.box-five:hover, .box-six:hover, .box-seven:hover, .box-eight:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 40px rgba(0, 255, 255, 0.5);
+}
+
+.box-five h3, .box-six h3, .box-seven h3, .box-eight h3 {
+  font-size: 26px;
+  color: #00ffff;
+  margin-bottom: 15px;
+  text-shadow: 0 0 8px #00ffff;
+}
