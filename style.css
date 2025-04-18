@@ -321,6 +321,6 @@ a.join-button:hover {
 }
 
 .fusion-img {
-  animation: zoomOutFade 1.5s ease-out forwards;
-  animation-delay: 1s;
+  animation: zoomOutFade 0.8s ease-out forwards;
+  animation-delay: 0.2s;
 }
