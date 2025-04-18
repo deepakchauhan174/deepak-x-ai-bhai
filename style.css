@@ -366,11 +366,14 @@ a.join-button:hover {
   text-shadow: 0 0 8px #00ffff;
 }
 
-.glow-flame {
-  font-size: 64px;
-  color: #00ffff;
-  text-shadow: 0 0 15px #00ffff;
-  margin: 20px 0;
+.glow-flame img {
+  max-width: 260px;
+  width: 100%;
+  height: auto;
+  margin: 20px auto;
+  display: block;
+  border-radius: 14px;
+  box-shadow: 0 0 25px #00ffff;
 }
 
 .fire-quote {
