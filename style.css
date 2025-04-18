@@ -272,17 +272,18 @@ a.join-button:hover {
   50% { opacity: 1; }
 }
 
-/* Floating Vertical Text */
 .floating-text {
   position: fixed;
   top: 18%;
-  right: 0;
+  right: 20px;
   writing-mode: vertical-lr;
   font-family: 'Orbitron', sans-serif;
-  font-size: 12px;
-  color: #00ffee;
+  font-size: 18px;
+  color: #00ffff;
   animation: floatText 4s infinite ease-in-out;
   z-index: 1000;
+  font-weight: bold;
+  text-shadow: 0 0 10px #00ffff;
 }
 
 @keyframes floatText {
@@ -306,12 +307,4 @@ a.join-button:hover {
   background-size: contain;
   opacity: 0.2;
   z-index: 999;
-}
-
-.floating-text {
-  font-size: 18px;
-  right: 20px;
-  color: #00ffff;
-  font-weight: bold;
-  text-shadow: 0 0 10px #00ffff;
 }
