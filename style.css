@@ -340,3 +340,89 @@ a.join-button:hover {
   border-radius: 12px;
   box-shadow: 0 0 25px #00ffff;
 }
+
+.motivational-fire-glow {
+  padding: 50px 20px;
+  background: radial-gradient(circle at center, #000022, #000);
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.3);
+  margin: 40px auto;
+  max-width: 800px;
+}
+
+.glow-title {
+  font-size: 28px;
+  color: #ffffff;
+  text-shadow: 0 0 10px #00ffff;
+  margin-bottom: 10px;
+}
+
+.glow-title span {
+  color: #00ffff;
+  font-size: 20px;
+  display: block;
+  margin-top: 5px;
+  text-shadow: 0 0 8px #00ffff;
+}
+
+.glow-flame {
+  font-size: 64px;
+  color: #00ffff;
+  text-shadow: 0 0 15px #00ffff;
+  margin: 20px 0;
+}
+
+.fire-quote {
+  font-size: 20px;
+  color: #00ffff;
+  margin: 10px auto;
+  font-style: italic;
+}
+
+.by {
+  color: #00ffff;
+  font-size: 16px;
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+.glow-subtitle {
+  font-size: 22px;
+  color: #fff;
+  margin-top: 30px;
+  text-shadow: 0 0 8px #ffffff;
+}
+
+.todays-fire {
+  font-size: 18px;
+  color: #00ffff;
+  margin-top: 12px;
+  line-height: 1.6;
+}
+
+.glow-categories {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.glow-categories .cat {
+  text-align: center;
+  flex: 1 1 100px;
+  padding: 15px;
+}
+
+.glow-categories .cat span {
+  font-size: 36px;
+  display: block;
+  color: #00ffff;
+  text-shadow: 0 0 8px #00ffff;
+}
+
+.glow-categories .cat p {
+  font-size: 16px;
+  color: #fff;
+  margin-top: 5px;
+}
