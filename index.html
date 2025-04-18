@@ -169,39 +169,21 @@
 </div>
   </section>  <footer style="padding: 20px; font-size: 18px; text-align: center; color: #ccc;">
     © 2025 Team Bhai × AI | All Rights Reserved
-  </footer>  <script>
-  const text = `AI Bhai Website Activation Chat – Deepak Bhai × AI\n\nअब वक़्त आ गया है...\nजहाँ इंसान और AI एक साथ चलें...`;
-
-  let i = 0;
-
-  function typeWriter() {
-    if (i < text.length) {
-      document.getElementById("typed-text").innerHTML += text.charAt(i);
-      i++;
-      setTimeout(typeWriter, 35);
-    } else {
-      setTimeout(() => {
-        document.getElementById("splash-screen").style.display = "none";
-        document.body.style.overflow = "auto"; // ये लाइन जोड़नी ज़रूरी है
-      }, 2000);
-    }
-  }
-
+  </footer>
+  <script>
   window.onload = function () {
-    try {
-      const splashStatus = localStorage.getItem("splashShown");
-      if (!splashStatus) {
-        document.getElementById("splash-screen").style.display = "flex";
-        document.body.style.overflow = "hidden"; // ताकि scroll न हो splash के समय
-        typeWriter();
-        localStorage.setItem("splashShown", "true");
-      } else {
-        document.getElementById("splash-screen").style.display = "none";
-        document.body.style.overflow = "auto"; // splash skip हुआ तो body visible रहे
-      }
-    } catch (e) {
-      document.getElementById("splash-screen").style.display = "flex";
-      typeWriter();
+    const splash = document.getElementById("splash-screen");
+    if (!sessionStorage.getItem("splashDone")) {
+      splash.style.display = "flex";
+      document.body.style.overflow = "hidden";
+      setTimeout(() => {
+        splash.style.display = "none";
+        document.body.style.overflow = "auto";
+        sessionStorage.setItem("splashDone", "true");
+      }, 2500); // 2.5 sec show
+    } else {
+      splash.style.display = "none";
+      document.body.style.overflow = "auto";
     }
   };
 </script>
