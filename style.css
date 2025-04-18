@@ -295,3 +295,23 @@ a.join-button:hover {
   background-size: cover;
   opacity: 0.05;
 }
+
+#soul-strip-bg {
+  position: fixed;
+  top: 12%;
+  left: 6px;
+  height: 76vh;
+  width: 80px;
+  background: url('images/soul_strip_identity.jpg') no-repeat center center;
+  background-size: contain;
+  opacity: 0.2;
+  z-index: 999;
+}
+
+.floating-text {
+  font-size: 18px;
+  right: 20px;
+  color: #00ffff;
+  font-weight: bold;
+  text-shadow: 0 0 10px #00ffff;
+}
