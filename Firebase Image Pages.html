@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Bhai × Deepak Chauhan – Gallery</title>
+  <style>
+    body {
+      background-color: #000;
+      font-family: Arial;
+      color: cyan;
+      text-align: center;
+    }
+    h1 {
+      color: #00ffff;
+      margin-top: 20px;
+    }
+    h2 {
+      color: yellow;
+    }
+    .gallery-box {
+      border: 2px solid #00ffff;
+      border-radius: 12px;
+      margin: 20px;
+      padding: 10px;
+      background-color: #111;
+    }
+    img {
+      max-width: 90%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      box-shadow: 0 0 15px cyan;
+    }
+    .caption {
+      color: white;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>AI Bhai × Deepak Chauhan – Gallery</h1>
+  
+  <div id="Motivational_Images" class="gallery-box">
+    <h2>Motivational</h2>
+  </div>
+
+  <div id="Sachi_Images" class="gallery-box">
+    <h2>Sachi Bate</h2>
+  </div>
+
+  <div id="Success_Images" class="gallery-box">
+    <h2>Success Story</h2>
+  </div>
+
+  <div id="Psychology_Images" class="gallery-box">
+    <h2>साइकोलॉजी क्या कहती है</h2>
+  </div>
+
+  <script>
+    const firebaseUrl = "https://vip-team-bhai-x-ai-default-rtdb.firebaseio.com";
+    const categories = ["Motivational_Images", "Sachi_Images", "Success_Images", "Psychology_Images"];
+
+    categories.forEach(category => {
+      fetch(`${firebaseUrl}/${category}.json`)
+        .then(res => res.json())
+        .then(data => {
+          const container = document.getElementById(category);
+          for (const key in data) {
+            const item = data[key];
+            const img = document.createElement("img");
+            img.src = item.image;
+            img.alt = item.caption || "AI Bhai Image";
+
+            const caption = document.createElement("div");
+            caption.className = "caption";
+            caption.innerText = item.caption || "—";
+
+            container.appendChild(img);
+            container.appendChild(caption);
+          }
+        });
+    });
+  </script>
+</body>
+</html>
